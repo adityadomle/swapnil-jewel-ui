@@ -11,7 +11,7 @@ const About = () => {
       <section className="py-16 bg-beige">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
-            About Pretti
+            About Swapnil Jewellers
           </h1>
           <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
             Where Every Ring And Necklace Tells Your Story
@@ -27,19 +27,19 @@ const About = () => {
                 Our Story
               </h2>
               <p className="text-base font-body text-muted-foreground mb-4">
-                Founded with a passion for timeless elegance, Pretti has been creating mesmerizing jewellery pieces that capture life's most precious moments. Our journey began with a simple belief: that every piece of jewellery should tell a unique story.
+                Founded with a passion for timeless elegance, Swapnil Jewellers has been creating mesmerizing jewellery pieces that capture life's most precious moments. Our journey began with a simple belief: that every piece of jewellery should tell a unique story.
               </p>
               <p className="text-base font-body text-muted-foreground mb-4">
                 We blend traditional craftsmanship with contemporary design, ensuring that each piece not only meets but exceeds the expectations of those who wear it. Our artisans bring decades of experience, working with the finest materials to create jewellery that stands the test of time.
               </p>
               <p className="text-base font-body text-muted-foreground">
-                At Pretti, we don't just create jewellery – we craft heirlooms that will be treasured for generations to come.
+                At Swapnil Jewellers, we don't just create jewellery – we craft heirlooms that will be treasured for generations to come.
               </p>
             </div>
             <div className="rounded-lg overflow-hidden shadow-sm">
               <img 
                 src={highlightImage} 
-                alt="Pretti Jewellery Craftsmanship"
+                alt="Swapnil Jewellers Craftsmanship"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -87,7 +87,7 @@ const About = () => {
             <div className="rounded-lg overflow-hidden shadow-sm order-2 lg:order-1">
               <img 
                 src={heroImage} 
-                alt="Pretti Jewellery Collection"
+                alt="Swapnil Jewellers Collection"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -102,7 +102,7 @@ const About = () => {
                 Our team is passionate about helping you find the perfect piece that resonates with your personal style and celebrates your special moments.
               </p>
               <p className="text-base font-body text-muted-foreground">
-                Thank you for choosing Pretti. We look forward to being part of your story.
+                Thank you for choosing Swapnil Jewellers. We look forward to being part of your story.
               </p>
             </div>
           </div>

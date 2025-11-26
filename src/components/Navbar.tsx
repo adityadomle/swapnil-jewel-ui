@@ -11,13 +11,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
             <Link to="/">
-              <h1 className="text-2xl font-heading font-semibold text-foreground">Pretti</h1>
+              <h1 className="text-2xl font-heading font-semibold text-foreground">Swapnil Jewellers</h1>
             </Link>
           </div>
           
           <div className="hidden md:flex space-x-8">
             <Link to="/" className="text-foreground font-body font-medium">Home</Link>
-            <a href="#" className="text-foreground font-body font-medium">Shop</a>
+            <Link to="/shop" className="text-foreground font-body font-medium">Shop</Link>
             <Link to="/categories" className="text-foreground font-body font-medium">Categories</Link>
             <Link to="/about" className="text-foreground font-body font-medium">About</Link>
             <a href="#" className="text-foreground font-body font-medium">Contact</a>
@@ -34,7 +34,7 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-4 space-y-2">
             <Link to="/" className="block text-foreground font-body font-medium py-2">Home</Link>
-            <a href="#" className="block text-foreground font-body font-medium py-2">Shop</a>
+            <Link to="/shop" className="block text-foreground font-body font-medium py-2">Shop</Link>
             <Link to="/categories" className="block text-foreground font-body font-medium py-2">Categories</Link>
             <Link to="/about" className="block text-foreground font-body font-medium py-2">About</Link>
             <a href="#" className="block text-foreground font-body font-medium py-2">Contact</a>

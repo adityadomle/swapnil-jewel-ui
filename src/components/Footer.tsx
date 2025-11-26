@@ -38,7 +38,7 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li><Link to="/" className="text-sm font-body text-muted-foreground">Home</Link></li>
-              <li><a href="#" className="text-sm font-body text-muted-foreground">Shop</a></li>
+              <li><Link to="/shop" className="text-sm font-body text-muted-foreground">Shop</Link></li>
               <li><Link to="/about" className="text-sm font-body text-muted-foreground">About us</Link></li>
               <li><Link to="/categories" className="text-sm font-body text-muted-foreground">Categories</Link></li>
             </ul>
@@ -77,7 +77,7 @@ const Footer = () => {
 
         <div className="border-t border-border pt-8 text-center">
           <p className="text-sm font-body text-muted-foreground">
-            © 2025 Pretti Mesmerizing Things. All rights reserved.
+            © 2025 Swapnil Jewellers. All rights reserved.
           </p>
         </div>
       </div>
