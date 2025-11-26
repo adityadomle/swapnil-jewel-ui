@@ -13,7 +13,15 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'heading': ['Playfair Display', 'serif'],
+        'body': ['Poppins', 'sans-serif'],
+      },
       colors: {
+        'rose-gold': 'hsl(var(--rose-gold))',
+        'rose-gold-light': 'hsl(var(--rose-gold-light))',
+        'beige': 'hsl(var(--beige))',
+        'beige-dark': 'hsl(var(--beige-dark))',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
