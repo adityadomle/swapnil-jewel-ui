@@ -31,7 +31,7 @@ const Features = () => {
           {features.map((feature, index) => (
             <div key={index} className="flex items-start space-x-4">
               <div className="flex-shrink-0">
-                <feature.icon className="w-10 h-10 text-rose-gold" strokeWidth={1.5} />
+                <feature.icon className="w-10 h-10 text-gold" strokeWidth={1.5} />
               </div>
               <div>
                 <h3 className="font-body font-semibold text-foreground mb-1">

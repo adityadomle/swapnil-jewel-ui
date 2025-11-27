@@ -124,7 +124,7 @@ const Contact = () => {
                 <h2 className="text-2xl font-heading text-foreground mb-6">Contact Information</h2>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <MapPin className="w-5 h-5 text-rose-gold mt-1" />
+                    <MapPin className="w-5 h-5 text-gold mt-1" />
                     <div>
                       <h3 className="font-body font-semibold text-foreground mb-1">Address</h3>
                       <p className="text-muted-foreground font-body">
@@ -134,14 +134,14 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <Phone className="w-5 h-5 text-rose-gold mt-1" />
+                    <Phone className="w-5 h-5 text-gold mt-1" />
                     <div>
                       <h3 className="font-body font-semibold text-foreground mb-1">Phone</h3>
                       <p className="text-muted-foreground font-body">+91 12345 67890</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <Mail className="w-5 h-5 text-rose-gold mt-1" />
+                    <Mail className="w-5 h-5 text-gold mt-1" />
                     <div>
                       <h3 className="font-body font-semibold text-foreground mb-1">Email</h3>
                       <p className="text-muted-foreground font-body">info@swapniljewellers.com</p>
@@ -152,7 +152,7 @@ const Contact = () => {
 
               <div className="bg-card rounded-lg shadow-sm p-8">
                 <div className="flex items-start gap-4">
-                  <Clock className="w-5 h-5 text-rose-gold mt-1" />
+                  <Clock className="w-5 h-5 text-gold mt-1" />
                   <div>
                     <h3 className="font-body font-semibold text-foreground mb-3">Business Hours</h3>
                     <div className="space-y-2 text-muted-foreground font-body">

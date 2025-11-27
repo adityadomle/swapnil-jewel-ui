@@ -14,7 +14,7 @@ const PromoBanners = () => {
                   Stylish Necklace
                 </p>
                 <h3 className="text-2xl font-heading font-bold text-foreground mb-4">
-                  Women's Rose Gold Necklace
+                  Women's Gold Necklace
                 </h3>
                 <Button className="bg-primary text-primary-foreground w-fit font-body">
                   Shop Now
@@ -23,7 +23,7 @@ const PromoBanners = () => {
               <div className="h-64 md:h-full">
                 <img 
                   src={necklaceImage} 
-                  alt="Rose gold necklace"
+                  alt="Gold necklace"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -37,7 +37,7 @@ const PromoBanners = () => {
                   Best Wedding Ring
                 </p>
                 <h3 className="text-2xl font-heading font-bold text-foreground mb-4">
-                  Rose Gold Ring For Women
+                  Gold Ring For Women
                 </h3>
                 <Button className="bg-primary text-primary-foreground w-fit font-body">
                   Shop Now
@@ -46,7 +46,7 @@ const PromoBanners = () => {
               <div className="h-64 md:h-full">
                 <img 
                   src={ringImage} 
-                  alt="Rose gold ring"
+                  alt="Gold ring"
                   className="w-full h-full object-cover"
                 />
               </div>
