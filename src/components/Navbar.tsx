@@ -20,7 +20,7 @@ const Navbar = () => {
             <Link to="/shop" className="text-foreground font-body font-medium">Shop</Link>
             <Link to="/categories" className="text-foreground font-body font-medium">Categories</Link>
             <Link to="/about" className="text-foreground font-body font-medium">About</Link>
-            <a href="#" className="text-foreground font-body font-medium">Contact</a>
+            <Link to="/contact" className="text-foreground font-body font-medium">Contact</Link>
           </div>
 
           <button 
@@ -37,7 +37,7 @@ const Navbar = () => {
             <Link to="/shop" className="block text-foreground font-body font-medium py-2">Shop</Link>
             <Link to="/categories" className="block text-foreground font-body font-medium py-2">Categories</Link>
             <Link to="/about" className="block text-foreground font-body font-medium py-2">About</Link>
-            <a href="#" className="block text-foreground font-body font-medium py-2">Contact</a>
+            <Link to="/contact" className="block text-foreground font-body font-medium py-2">Contact</Link>
           </div>
         )}
       </div>
