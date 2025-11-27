@@ -61,7 +61,7 @@ const CategoriesPage = () => {
                   <p className="text-sm font-body text-muted-foreground mb-4">
                     {category.description}
                   </p>
-                  <p className="text-xs font-body text-rose-gold uppercase tracking-wider mb-6">
+                  <p className="text-xs font-body text-gold uppercase tracking-wider mb-6">
                     {category.count}
                   </p>
                   <Button variant="outline" className="w-full bg-background text-foreground border-border font-body">

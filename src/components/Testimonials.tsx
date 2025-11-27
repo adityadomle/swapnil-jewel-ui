@@ -5,7 +5,7 @@ const Testimonials = () => {
     {
       name: "Naushil Doshi",
       role: "Businessman",
-      text: "Amazing jewelry collection! The quality and design exceeded my expectations. The rose gold ring I purchased is absolutely stunning and my wife loves it.",
+      text: "Amazing jewelry collection! The quality and design exceeded my expectations. The gold ring I purchased is absolutely stunning and my wife loves it.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
     },
     {
@@ -39,7 +39,7 @@ const Testimonials = () => {
             <div key={index} className="bg-background rounded-lg p-6 shadow-sm">
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-rose-gold text-rose-gold" />
+                  <Star key={i} className="w-4 h-4 fill-gold text-gold" />
                 ))}
               </div>
               <p className="font-body text-muted-foreground mb-6 italic">

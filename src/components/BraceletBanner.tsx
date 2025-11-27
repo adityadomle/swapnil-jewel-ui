@@ -12,7 +12,7 @@ const BraceletBanner = () => {
                 Diamond Bracelet
               </p>
               <h2 className="text-3xl sm:text-4xl font-heading font-bold text-foreground mb-4">
-                Sparkling Rose Gold Diamond Bracelet Luxury
+                Sparkling Gold Diamond Bracelet Luxury
               </h2>
               <Button className="bg-primary text-primary-foreground font-body px-8">
                 Shop Now
@@ -21,7 +21,7 @@ const BraceletBanner = () => {
             <div className="h-80 lg:h-full">
               <img 
                 src={braceletImage} 
-                alt="Rose gold diamond bracelet"
+                alt="Gold diamond bracelet"
                 className="w-full h-full object-cover"
               />
             </div>
