@@ -65,18 +65,18 @@ const FeaturedProducts = () => {
   ];
 
   return (
-    <section className="py-12 bg-background">
+    <section className="py-8 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl sm:text-3xl font-heading font-bold text-foreground mb-2">
+        <div className="text-center mb-4">
+          <h2 className="text-xl sm:text-2xl font-heading font-bold text-foreground mb-1">
             Featured Products
           </h2>
-          <p className="text-sm font-body text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xs font-body text-muted-foreground max-w-2xl mx-auto">
             Elevate Your Style With Jewelry That Speaks Your Unique Story
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
           {products.map((product, index) => (
             <ProductCard key={index} {...product} />
           ))}
