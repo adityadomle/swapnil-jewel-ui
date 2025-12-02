@@ -42,31 +42,31 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      <div className="py-16 px-4">
+      <div className="py-8 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-heading text-foreground mb-4">Contact Us</h1>
-            <p className="text-muted-foreground font-body max-w-2xl mx-auto">
+          <div className="text-center mb-6">
+            <h1 className="text-2xl md:text-3xl font-heading text-foreground mb-2">Contact Us</h1>
+            <p className="text-xs text-muted-foreground font-body max-w-2xl mx-auto">
               Get in touch with us for any inquiries about our exquisite jewellery collection
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
             {/* Contact Form */}
-            <div className="bg-card rounded-lg shadow-sm p-8">
-              <h2 className="text-2xl font-heading text-foreground mb-6">Send us a Message</h2>
+            <div className="bg-card rounded-lg shadow-sm p-4">
+              <h2 className="text-lg font-heading text-foreground mb-4">Send us a Message</h2>
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
                   <FormField
                     control={form.control}
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Name</FormLabel>
+                        <FormLabel className="text-xs">Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your name" {...field} />
+                          <Input placeholder="Your name" className="text-xs h-8" {...field} />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-[10px]" />
                       </FormItem>
                     )}
                   />
@@ -75,11 +75,11 @@ const Contact = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email</FormLabel>
+                        <FormLabel className="text-xs">Email</FormLabel>
                         <FormControl>
-                          <Input type="email" placeholder="your@email.com" {...field} />
+                          <Input type="email" placeholder="your@email.com" className="text-xs h-8" {...field} />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-[10px]" />
                       </FormItem>
                     )}
                   />
@@ -88,11 +88,11 @@ const Contact = () => {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Phone</FormLabel>
+                        <FormLabel className="text-xs">Phone</FormLabel>
                         <FormControl>
-                          <Input type="tel" placeholder="Your phone number" {...field} />
+                          <Input type="tel" placeholder="Your phone number" className="text-xs h-8" {...field} />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-[10px]" />
                       </FormItem>
                     )}
                   />
@@ -101,61 +101,61 @@ const Contact = () => {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel className="text-xs">Message</FormLabel>
                         <FormControl>
                           <Textarea 
                             placeholder="Tell us about your inquiry..." 
-                            className="min-h-[120px]"
+                            className="min-h-[80px] text-xs"
                             {...field} 
                           />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-[10px]" />
                       </FormItem>
                     )}
                   />
-                  <Button type="submit" className="w-full">Send Message</Button>
+                  <Button type="submit" className="w-full h-8 text-xs">Send Message</Button>
                 </form>
               </Form>
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-8">
-              <div className="bg-card rounded-lg shadow-sm p-8">
-                <h2 className="text-2xl font-heading text-foreground mb-6">Contact Information</h2>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-4">
-                    <MapPin className="w-5 h-5 text-gold mt-1" />
+            <div className="space-y-4">
+              <div className="bg-card rounded-lg shadow-sm p-4">
+                <h2 className="text-lg font-heading text-foreground mb-4">Contact Information</h2>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-4 h-4 text-gold mt-0.5" />
                     <div>
-                      <h3 className="font-body font-semibold text-foreground mb-1">Address</h3>
-                      <p className="text-muted-foreground font-body">
+                      <h3 className="font-body font-semibold text-foreground text-xs mb-0.5">Address</h3>
+                      <p className="text-[10px] text-muted-foreground font-body">
                         Swapnil Jewellers<br />
                         Jewelry Store Location
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <Phone className="w-5 h-5 text-gold mt-1" />
+                  <div className="flex items-start gap-3">
+                    <Phone className="w-4 h-4 text-gold mt-0.5" />
                     <div>
-                      <h3 className="font-body font-semibold text-foreground mb-1">Phone</h3>
-                      <p className="text-muted-foreground font-body">+91 12345 67890</p>
+                      <h3 className="font-body font-semibold text-foreground text-xs mb-0.5">Phone</h3>
+                      <p className="text-[10px] text-muted-foreground font-body">+91 12345 67890</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <Mail className="w-5 h-5 text-gold mt-1" />
+                  <div className="flex items-start gap-3">
+                    <Mail className="w-4 h-4 text-gold mt-0.5" />
                     <div>
-                      <h3 className="font-body font-semibold text-foreground mb-1">Email</h3>
-                      <p className="text-muted-foreground font-body">info@swapniljewellers.com</p>
+                      <h3 className="font-body font-semibold text-foreground text-xs mb-0.5">Email</h3>
+                      <p className="text-[10px] text-muted-foreground font-body">info@swapniljewellers.com</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-card rounded-lg shadow-sm p-8">
-                <div className="flex items-start gap-4">
-                  <Clock className="w-5 h-5 text-gold mt-1" />
+              <div className="bg-card rounded-lg shadow-sm p-4">
+                <div className="flex items-start gap-3">
+                  <Clock className="w-4 h-4 text-gold mt-0.5" />
                   <div>
-                    <h3 className="font-body font-semibold text-foreground mb-3">Business Hours</h3>
-                    <div className="space-y-2 text-muted-foreground font-body">
+                    <h3 className="font-body font-semibold text-foreground text-xs mb-2">Business Hours</h3>
+                    <div className="space-y-1 text-[10px] text-muted-foreground font-body">
                       <div className="flex justify-between">
                         <span>Monday - Saturday:</span>
                         <span>10:00 AM - 8:00 PM</span>
@@ -172,9 +172,9 @@ const Contact = () => {
           </div>
 
           {/* Map */}
-          <div className="bg-card rounded-lg shadow-sm p-4">
-            <h2 className="text-2xl font-heading text-foreground mb-6 px-4">Visit Our Store</h2>
-            <div className="w-full h-[400px] rounded-lg overflow-hidden">
+          <div className="bg-card rounded-lg shadow-sm p-3">
+            <h2 className="text-lg font-heading text-foreground mb-3 px-2">Visit Our Store</h2>
+            <div className="w-full h-[300px] rounded-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0977099450433!2d-122.41941548468196!3d37.77492977975903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter%20HQ!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
                 width="100%"

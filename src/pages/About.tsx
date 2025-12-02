@@ -8,31 +8,31 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      <section className="py-16 bg-beige">
+      <section className="py-8 bg-beige">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">
+          <h1 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-2">
             About Swapnil Jewellers
           </h1>
-          <p className="text-lg font-body text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm font-body text-muted-foreground max-w-2xl mx-auto">
             Where Every Ring And Necklace Tells Your Story
           </p>
         </div>
       </section>
 
-      <section className="py-16 bg-background">
+      <section className="py-8 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
             <div>
-              <h2 className="text-3xl font-heading font-semibold text-foreground mb-6">
+              <h2 className="text-xl font-heading font-semibold text-foreground mb-3">
                 Our Story
               </h2>
-              <p className="text-base font-body text-muted-foreground mb-4">
+              <p className="text-xs font-body text-muted-foreground mb-2">
                 Founded with a passion for timeless elegance, Swapnil Jewellers has been creating mesmerizing jewellery pieces that capture life's most precious moments. Our journey began with a simple belief: that every piece of jewellery should tell a unique story.
               </p>
-              <p className="text-base font-body text-muted-foreground mb-4">
+              <p className="text-xs font-body text-muted-foreground mb-2">
                 We blend traditional craftsmanship with contemporary design, ensuring that each piece not only meets but exceeds the expectations of those who wear it. Our artisans bring decades of experience, working with the finest materials to create jewellery that stands the test of time.
               </p>
-              <p className="text-base font-body text-muted-foreground">
+              <p className="text-xs font-body text-muted-foreground">
                 At Swapnil Jewellers, we don't just create jewellery – we craft heirlooms that will be treasured for generations to come.
               </p>
             </div>
@@ -40,40 +40,40 @@ const About = () => {
               <img 
                 src={highlightImage} 
                 alt="Swapnil Jewellers Craftsmanship"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-beige">
+      <section className="py-8 bg-beige">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-heading font-semibold text-foreground text-center mb-12">
+          <h2 className="text-xl font-heading font-semibold text-foreground text-center mb-6">
             Our Values
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="text-center">
-              <h3 className="text-xl font-heading font-semibold text-foreground mb-3">
+              <h3 className="text-sm font-heading font-semibold text-foreground mb-2">
                 Quality Craftsmanship
               </h3>
-              <p className="text-sm font-body text-muted-foreground">
+              <p className="text-xs font-body text-muted-foreground">
                 Every piece is meticulously crafted by skilled artisans who bring their expertise and passion to each creation.
               </p>
             </div>
             <div className="text-center">
-              <h3 className="text-xl font-heading font-semibold text-foreground mb-3">
+              <h3 className="text-sm font-heading font-semibold text-foreground mb-2">
                 Authentic Materials
               </h3>
-              <p className="text-sm font-body text-muted-foreground">
+              <p className="text-xs font-body text-muted-foreground">
                 We use only genuine, ethically sourced materials to ensure the highest quality and sustainability.
               </p>
             </div>
             <div className="text-center">
-              <h3 className="text-xl font-heading font-semibold text-foreground mb-3">
+              <h3 className="text-sm font-heading font-semibold text-foreground mb-2">
                 Timeless Design
               </h3>
-              <p className="text-sm font-body text-muted-foreground">
+              <p className="text-xs font-body text-muted-foreground">
                 Our designs blend classic elegance with modern aesthetics, creating pieces that never go out of style.
               </p>
             </div>
@@ -81,27 +81,27 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-background">
+      <section className="py-8 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
             <div className="rounded-lg overflow-hidden shadow-sm order-2 lg:order-1">
               <img 
                 src={heroImage} 
                 alt="Swapnil Jewellers Collection"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-3xl font-heading font-semibold text-foreground mb-6">
+              <h2 className="text-xl font-heading font-semibold text-foreground mb-3">
                 Our Commitment
               </h2>
-              <p className="text-base font-body text-muted-foreground mb-4">
+              <p className="text-xs font-body text-muted-foreground mb-2">
                 We are committed to providing an exceptional experience for every customer. From the moment you discover our collections to the day you receive your piece, we ensure that every step reflects our dedication to excellence.
               </p>
-              <p className="text-base font-body text-muted-foreground mb-4">
+              <p className="text-xs font-body text-muted-foreground mb-2">
                 Our team is passionate about helping you find the perfect piece that resonates with your personal style and celebrates your special moments.
               </p>
-              <p className="text-base font-body text-muted-foreground">
+              <p className="text-xs font-body text-muted-foreground">
                 Thank you for choosing Swapnil Jewellers. We look forward to being part of your story.
               </p>
             </div>

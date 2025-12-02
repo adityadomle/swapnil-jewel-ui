@@ -17,19 +17,19 @@ const ProductCard = ({ name, weight, rating, image }: ProductCardProps) => {
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="p-3 text-center">
-        <h4 className="font-body font-medium text-foreground mb-1.5 text-xs leading-tight">
+      <div className="p-2 text-center">
+        <h4 className="font-body font-medium text-foreground mb-1 text-[10px] leading-tight">
           {name}
         </h4>
-        <div className="flex items-center justify-center mb-1.5">
+        <div className="flex items-center justify-center mb-1">
           {[...Array(5)].map((_, i) => (
             <Star 
               key={i} 
-              className={`w-2.5 h-2.5 ${i < rating ? 'fill-gold text-gold' : 'text-muted-foreground'}`}
+              className={`w-2 h-2 ${i < rating ? 'fill-gold text-gold' : 'text-muted-foreground'}`}
             />
           ))}
         </div>
-        <p className="text-xs font-body font-semibold text-gold">
+        <p className="text-[10px] font-body font-semibold text-gold">
           {weight}
         </p>
       </div>

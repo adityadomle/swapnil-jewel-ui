@@ -6,7 +6,6 @@ import NewArrivals from "@/components/NewArrivals";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import PromoBanners from "@/components/PromoBanners";
 import HighlightBanner from "@/components/HighlightBanner";
-import Testimonials from "@/components/Testimonials";
 import BraceletBanner from "@/components/BraceletBanner";
 import Footer from "@/components/Footer";
 
@@ -21,7 +20,6 @@ const Index = () => {
       <FeaturedProducts />
       <PromoBanners />
       <HighlightBanner />
-      <Testimonials />
       <BraceletBanner />
       <Footer />
     </div>
