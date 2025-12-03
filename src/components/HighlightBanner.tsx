@@ -1,31 +1,32 @@
 import highlightImage from "@/assets/highlight-model.jpg";
-import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const HighlightBanner = () => {
   return (
-    <section className="py-8 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-4 items-center bg-beige rounded-lg overflow-hidden shadow-sm">
-          <div className="order-2 lg:order-1">
+    <section className="py-4 bg-background">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="grid grid-cols-2 gap-2 items-center bg-beige rounded-lg overflow-hidden shadow-sm">
+          <div className="h-32 sm:h-40 lg:h-48">
             <img 
               src={highlightImage} 
-              alt="Blue necklace collection"
-              className="w-full h-auto object-contain"
+              alt="Pure gold jewellery collection"
+              className="w-full h-full object-contain p-2"
+              loading="lazy"
             />
           </div>
-          <div className="order-1 lg:order-2 p-4 lg:p-6">
-            <p className="text-xs font-body text-muted-foreground uppercase tracking-wider mb-1">
-              This Week's Highlights
+          <div className="p-2 sm:p-3">
+            <p className="text-[8px] font-body text-gold uppercase tracking-wider mb-0.5">
+              This Week's Highlight
             </p>
-            <h2 className="text-xl sm:text-2xl font-heading font-bold text-foreground mb-2">
-              Drop Cut Blue Necklace With Earrings Set
+            <h2 className="text-xs sm:text-sm font-heading font-bold text-foreground mb-1">
+              Pure Gold Bridal Set
             </h2>
-            <p className="text-sm font-body text-muted-foreground mb-3">
-              Adorningly Products For The Upscale Urban Lifestyle
+            <p className="text-[9px] font-body text-muted-foreground mb-2">
+              Handcrafted 22K Gold Collection
             </p>
-            <Button className="bg-primary text-primary-foreground font-body text-xs px-6 py-2">
-              Shop Now
-            </Button>
+            <Link to="/shop" className="text-[9px] font-body text-gold font-medium">
+              View Collection →
+            </Link>
           </div>
         </div>
       </div>

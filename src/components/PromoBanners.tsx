@@ -1,57 +1,59 @@
 import necklaceImage from "@/assets/promo-necklace.jpg";
 import ringImage from "@/assets/promo-ring.jpg";
-import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const PromoBanners = () => {
   return (
-    <section className="py-8 bg-beige">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          <div className="relative bg-background rounded-lg overflow-hidden shadow-sm">
-            <div className="grid grid-cols-2 gap-2">
-              <div className="p-4 flex flex-col justify-center">
-                <p className="text-[10px] font-body text-muted-foreground uppercase tracking-wider mb-1">
-                  Stylish Necklace
+    <section className="py-4 bg-beige">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="grid grid-cols-2 gap-2">
+          <Link to="/shop" className="relative bg-card rounded-lg overflow-hidden shadow-sm">
+            <div className="grid grid-cols-2 gap-1">
+              <div className="p-2 flex flex-col justify-center">
+                <p className="text-[8px] font-body text-gold uppercase tracking-wider mb-0.5">
+                  Pure Gold
                 </p>
-                <h3 className="text-sm font-heading font-bold text-foreground mb-2">
-                  Women's Gold Necklace
+                <h3 className="text-[10px] sm:text-xs font-heading font-semibold text-foreground mb-1">
+                  Gold Chain Collection
                 </h3>
-                <Button className="bg-primary text-primary-foreground w-fit font-body text-xs px-4 py-2">
-                  Shop Now
-                </Button>
+                <span className="text-[8px] font-body text-gold font-medium">
+                  Shop Now →
+                </span>
               </div>
-              <div className="h-40">
+              <div className="h-24 sm:h-28">
                 <img 
                   src={necklaceImage} 
-                  alt="Gold necklace"
+                  alt="Gold chain"
                   className="w-full h-full object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="relative bg-background rounded-lg overflow-hidden shadow-sm">
-            <div className="grid grid-cols-2 gap-2">
-              <div className="p-4 flex flex-col justify-center">
-                <p className="text-[10px] font-body text-muted-foreground uppercase tracking-wider mb-1">
-                  Best Wedding Ring
+          <Link to="/shop" className="relative bg-card rounded-lg overflow-hidden shadow-sm">
+            <div className="grid grid-cols-2 gap-1">
+              <div className="p-2 flex flex-col justify-center">
+                <p className="text-[8px] font-body text-gold uppercase tracking-wider mb-0.5">
+                  22K Gold
                 </p>
-                <h3 className="text-sm font-heading font-bold text-foreground mb-2">
-                  Gold Ring For Women
+                <h3 className="text-[10px] sm:text-xs font-heading font-semibold text-foreground mb-1">
+                  Wedding Ring Collection
                 </h3>
-                <Button className="bg-primary text-primary-foreground w-fit font-body text-xs px-4 py-2">
-                  Shop Now
-                </Button>
+                <span className="text-[8px] font-body text-gold font-medium">
+                  Shop Now →
+                </span>
               </div>
-              <div className="h-40">
+              <div className="h-24 sm:h-28">
                 <img 
                   src={ringImage} 
                   alt="Gold ring"
                   className="w-full h-full object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

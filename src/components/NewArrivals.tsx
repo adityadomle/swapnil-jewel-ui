@@ -3,68 +3,68 @@ import ProductCard from "./ProductCard";
 const NewArrivals = () => {
   const products = [
     {
-      name: "Real Diamond Jewellery Gem Studded Gold Ring",
+      name: "Pure Gold Traditional Ring",
       weight: "2.5 gm",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=300"
+      image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&q=80"
     },
     {
-      name: "The Trendy Gold With Diamond Ring",
+      name: "22K Gold Wedding Band",
       weight: "3.2 gm",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=300"
+      image: "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=400&q=80"
     },
     {
-      name: "Exotic Ethnicities Fancy Halo Gold Ring",
-      weight: "2.8 gm",
+      name: "Gold Rope Chain Necklace",
+      weight: "8.5 gm",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=300"
+      image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80"
     },
     {
-      name: "Grand Promise Diamond Gold Ring",
-      weight: "3.5 gm",
+      name: "Classic Gold Bangle Set",
+      weight: "12.0 gm",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=300"
+      image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=400&q=80"
     },
     {
-      name: "Elegant Gold Band Ring",
-      weight: "2.2 gm",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1614179689702-355944cd57d4?w=300"
-    },
-    {
-      name: "Classic Gold Wedding Ring",
+      name: "Pure Gold Hoop Earrings",
       weight: "4.1 gm",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=300"
+      image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80"
     },
     {
-      name: "Modern Gold Statement Ring",
-      weight: "3.8 gm",
+      name: "22K Gold Cuban Link Chain",
+      weight: "15.8 gm",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=300"
+      image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&q=80"
     },
     {
-      name: "Delicate Gold Pearl Ring",
-      weight: "2.9 gm",
+      name: "Gold Temple Pendant",
+      weight: "5.5 gm",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=300"
+      image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&q=80"
+    },
+    {
+      name: "Traditional Gold Kada",
+      weight: "18.0 gm",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=400&q=80"
     }
   ];
 
   return (
-    <section className="py-8 bg-beige">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-6 bg-beige">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
         <div className="text-center mb-4">
-          <h2 className="text-xl sm:text-2xl font-heading font-bold text-foreground mb-1">
-            New Arrival
+          <h2 className="text-lg sm:text-xl font-heading font-bold text-foreground mb-1">
+            New Arrivals
           </h2>
-          <p className="text-xs font-body text-muted-foreground max-w-2xl mx-auto">
-            Explore The Mesmerizing Collection Of New Line Of Elegant Gold Rings For Women
+          <p className="text-[10px] font-body text-muted-foreground max-w-xl mx-auto">
+            Discover Our Latest Pure Gold Collection
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3">
           {products.map((product, index) => (
             <ProductCard key={index} {...product} />
           ))}

@@ -1,82 +1,77 @@
-import { Facebook, Twitter, Instagram, Youtube, MapPin } from "lucide-react";
+import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-beige py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+    <footer className="bg-beige py-6">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
           <div>
-            <h3 className="text-xl font-heading font-bold text-foreground mb-4">
-              About The Store
+            <h3 className="text-sm font-heading font-bold text-foreground mb-2">
+              Swapnil Jewellers
             </h3>
-            <p className="text-sm font-body text-muted-foreground mb-4">
-              Welcome to our store, where you guide the process art studio dedicated to bringing imagination products and make your event happy and luxury.
+            <p className="text-[9px] font-body text-muted-foreground mb-2">
+              Your trusted destination for pure 22K gold jewellery.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-foreground">
-                <Facebook className="w-5 h-5" />
+            <div className="flex space-x-2">
+              <a href="#" className="text-gold">
+                <Facebook className="w-3.5 h-3.5" />
               </a>
-              <a href="#" className="text-foreground">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-foreground">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-foreground">
-                <MapPin className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-foreground">
-                <Youtube className="w-5 h-5" />
+              <a href="#" className="text-gold">
+                <Instagram className="w-3.5 h-3.5" />
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="text-lg font-heading font-semibold text-foreground mb-4">
+            <h3 className="text-xs font-heading font-semibold text-foreground mb-2">
               Quick Links
             </h3>
-            <ul className="space-y-2">
-              <li><Link to="/" className="text-sm font-body text-muted-foreground">Home</Link></li>
-              <li><Link to="/shop" className="text-sm font-body text-muted-foreground">Shop</Link></li>
-              <li><Link to="/about" className="text-sm font-body text-muted-foreground">About us</Link></li>
-              <li><Link to="/categories" className="text-sm font-body text-muted-foreground">Categories</Link></li>
+            <ul className="space-y-1">
+              <li><Link to="/" className="text-[9px] font-body text-muted-foreground">Home</Link></li>
+              <li><Link to="/shop" className="text-[9px] font-body text-muted-foreground">Shop</Link></li>
+              <li><Link to="/about" className="text-[9px] font-body text-muted-foreground">About</Link></li>
+              <li><Link to="/contact" className="text-[9px] font-body text-muted-foreground">Contact</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-heading font-semibold text-foreground mb-4">
-              Services
+            <h3 className="text-xs font-heading font-semibold text-foreground mb-2">
+              Categories
             </h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-sm font-body text-muted-foreground">FAQ</a></li>
-              <li><a href="#" className="text-sm font-body text-muted-foreground">Refund Policy</a></li>
-              <li><a href="#" className="text-sm font-body text-muted-foreground">Shipping & Returns</a></li>
-              <li><a href="#" className="text-sm font-body text-muted-foreground">Privacy Policy</a></li>
-              <li><a href="#" className="text-sm font-body text-muted-foreground">Wishlist</a></li>
+            <ul className="space-y-1">
+              <li><Link to="/shop" className="text-[9px] font-body text-muted-foreground">Gold Rings</Link></li>
+              <li><Link to="/shop" className="text-[9px] font-body text-muted-foreground">Gold Chains</Link></li>
+              <li><Link to="/shop" className="text-[9px] font-body text-muted-foreground">Gold Bangles</Link></li>
+              <li><Link to="/shop" className="text-[9px] font-body text-muted-foreground">Gold Earrings</Link></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-heading font-semibold text-foreground mb-4">
-              Contact Us
+            <h3 className="text-xs font-heading font-semibold text-foreground mb-2">
+              Contact
             </h3>
-            <ul className="space-y-2">
-              <li className="text-sm font-body text-muted-foreground">
-                20-3, Ring Rd, Malharganj, INDORE
+            <ul className="space-y-1">
+              <li className="flex items-start gap-1">
+                <MapPin className="w-3 h-3 text-gold mt-0.5 flex-shrink-0" />
+                <span className="text-[9px] font-body text-muted-foreground">
+                  Ring Rd, Malharganj, Indore
+                </span>
               </li>
-              <li className="text-sm font-body text-muted-foreground">
-                +91 7314051261
+              <li className="flex items-center gap-1">
+                <Phone className="w-3 h-3 text-gold flex-shrink-0" />
+                <span className="text-[9px] font-body text-muted-foreground">+91 7314051261</span>
               </li>
-              <li className="text-sm font-body text-muted-foreground">
-                contact@prettimesmerizingthings.com
+              <li className="flex items-center gap-1">
+                <Mail className="w-3 h-3 text-gold flex-shrink-0" />
+                <span className="text-[9px] font-body text-muted-foreground">info@swapniljewellers.com</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 text-center">
-          <p className="text-sm font-body text-muted-foreground">
+        <div className="border-t border-border/30 pt-3 text-center">
+          <p className="text-[8px] font-body text-muted-foreground">
             © 2025 Swapnil Jewellers. All rights reserved.
           </p>
         </div>

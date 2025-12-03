@@ -9,27 +9,28 @@ interface ProductCardProps {
 
 const ProductCard = ({ name, weight, rating, image }: ProductCardProps) => {
   return (
-    <div className="bg-background rounded-lg overflow-hidden shadow-sm border border-border">
-      <div className="aspect-square bg-beige p-2">
+    <div className="bg-card rounded-lg overflow-hidden shadow-sm border border-border/50">
+      <div className="aspect-square bg-beige p-1.5">
         <img 
           src={image} 
           alt={name}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain rounded"
+          loading="lazy"
         />
       </div>
-      <div className="p-2 text-center">
-        <h4 className="font-body font-medium text-foreground mb-1 text-[10px] leading-tight">
+      <div className="p-1.5 text-center bg-card">
+        <h4 className="font-body font-medium text-foreground mb-0.5 text-[9px] leading-tight line-clamp-2">
           {name}
         </h4>
-        <div className="flex items-center justify-center mb-1">
+        <div className="flex items-center justify-center mb-0.5">
           {[...Array(5)].map((_, i) => (
             <Star 
               key={i} 
-              className={`w-2 h-2 ${i < rating ? 'fill-gold text-gold' : 'text-muted-foreground'}`}
+              className={`w-2 h-2 ${i < rating ? 'fill-gold text-gold' : 'text-muted'}`}
             />
           ))}
         </div>
-        <p className="text-[10px] font-body font-semibold text-gold">
+        <p className="text-[9px] font-body font-semibold text-gold">
           {weight}
         </p>
       </div>
