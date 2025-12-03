@@ -4,43 +4,39 @@ const Features = () => {
   const features = [
     {
       icon: Truck,
-      title: "All Over India",
-      subtitle: "Free Shipping On Order Above ₹1000"
+      title: "Free Shipping",
+      subtitle: "On orders above ₹1000"
     },
     {
       icon: ShieldCheck,
-      title: "Money Back Guarantee",
-      subtitle: "Money back in 15 days"
+      title: "Money Back",
+      subtitle: "15 days guarantee"
     },
     {
       icon: Gift,
-      title: "Offers And Discounts",
-      subtitle: "On all our items"
+      title: "Special Offers",
+      subtitle: "On all items"
     },
     {
       icon: Headphones,
-      title: "24/7 Support Services",
-      subtitle: "Call us at anytime"
+      title: "24/7 Support",
+      subtitle: "Call anytime"
     }
   ];
 
   return (
-    <section className="py-6 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+    <section className="py-3 bg-background border-b border-border/30">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+        <div className="grid grid-cols-4 gap-2">
           {features.map((feature, index) => (
-            <div key={index} className="flex flex-col items-center text-center space-y-2">
-              <div className="flex-shrink-0">
-                <feature.icon className="w-6 h-6 text-gold" strokeWidth={1.5} />
-              </div>
-              <div>
-                <h3 className="font-body font-semibold text-foreground text-xs mb-0.5">
-                  {feature.title}
-                </h3>
-                <p className="text-[10px] font-body text-muted-foreground">
-                  {feature.subtitle}
-                </p>
-              </div>
+            <div key={index} className="flex flex-col items-center text-center">
+              <feature.icon className="w-4 h-4 text-gold mb-1" strokeWidth={1.5} />
+              <h3 className="font-body font-medium text-foreground text-[8px] sm:text-[9px]">
+                {feature.title}
+              </h3>
+              <p className="text-[7px] sm:text-[8px] font-body text-muted-foreground hidden sm:block">
+                {feature.subtitle}
+              </p>
             </div>
           ))}
         </div>

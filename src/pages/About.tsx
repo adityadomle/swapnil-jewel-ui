@@ -8,101 +8,101 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      <section className="py-8 bg-beige">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-2">
+      <section className="py-4 bg-beige">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 text-center">
+          <h1 className="text-lg sm:text-xl font-heading font-bold text-foreground mb-1">
             About Swapnil Jewellers
           </h1>
-          <p className="text-sm font-body text-muted-foreground max-w-2xl mx-auto">
-            Where Every Ring And Necklace Tells Your Story
+          <p className="text-[10px] font-body text-muted-foreground max-w-xl mx-auto">
+            Your Trusted Destination For Pure 22K Gold Jewellery
           </p>
         </div>
       </section>
 
-      <section className="py-8 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+      <section className="py-4 bg-background">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
             <div>
-              <h2 className="text-xl font-heading font-semibold text-foreground mb-3">
+              <h2 className="text-sm font-heading font-semibold text-foreground mb-2">
                 Our Story
               </h2>
-              <p className="text-xs font-body text-muted-foreground mb-2">
-                Founded with a passion for timeless elegance, Swapnil Jewellers has been creating mesmerizing jewellery pieces that capture life's most precious moments. Our journey began with a simple belief: that every piece of jewellery should tell a unique story.
+              <p className="text-[9px] font-body text-muted-foreground mb-1.5">
+                Founded with a passion for pure gold craftsmanship, Swapnil Jewellers has been creating exquisite 22K gold jewellery that captures life's most precious moments.
               </p>
-              <p className="text-xs font-body text-muted-foreground mb-2">
-                We blend traditional craftsmanship with contemporary design, ensuring that each piece not only meets but exceeds the expectations of those who wear it. Our artisans bring decades of experience, working with the finest materials to create jewellery that stands the test of time.
+              <p className="text-[9px] font-body text-muted-foreground mb-1.5">
+                We blend traditional Indian craftsmanship with modern designs, ensuring each piece exceeds expectations. Our artisans bring decades of experience, working with the finest pure gold.
               </p>
-              <p className="text-xs font-body text-muted-foreground">
-                At Swapnil Jewellers, we don't just create jewellery – we craft heirlooms that will be treasured for generations to come.
+              <p className="text-[9px] font-body text-muted-foreground">
+                At Swapnil Jewellers, we craft heirlooms treasured for generations.
               </p>
             </div>
-            <div className="rounded-lg overflow-hidden shadow-sm">
+            <div className="rounded-lg overflow-hidden shadow-sm h-40 sm:h-48">
               <img 
                 src={highlightImage} 
-                alt="Swapnil Jewellers Craftsmanship"
-                className="w-full h-auto object-contain"
+                alt="Pure gold jewellery craftsmanship"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-8 bg-beige">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-xl font-heading font-semibold text-foreground text-center mb-6">
+      <section className="py-4 bg-beige">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+          <h2 className="text-sm font-heading font-semibold text-foreground text-center mb-3">
             Our Values
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="text-center">
-              <h3 className="text-sm font-heading font-semibold text-foreground mb-2">
-                Quality Craftsmanship
+          <div className="grid grid-cols-3 gap-2">
+            <div className="text-center p-2 bg-card rounded-lg">
+              <h3 className="text-[10px] font-heading font-semibold text-foreground mb-1">
+                Pure Gold
               </h3>
-              <p className="text-xs font-body text-muted-foreground">
-                Every piece is meticulously crafted by skilled artisans who bring their expertise and passion to each creation.
+              <p className="text-[8px] font-body text-muted-foreground">
+                Only certified 22K gold used in every piece
               </p>
             </div>
-            <div className="text-center">
-              <h3 className="text-sm font-heading font-semibold text-foreground mb-2">
-                Authentic Materials
+            <div className="text-center p-2 bg-card rounded-lg">
+              <h3 className="text-[10px] font-heading font-semibold text-foreground mb-1">
+                Expert Craft
               </h3>
-              <p className="text-xs font-body text-muted-foreground">
-                We use only genuine, ethically sourced materials to ensure the highest quality and sustainability.
+              <p className="text-[8px] font-body text-muted-foreground">
+                Skilled artisans with generations of experience
               </p>
             </div>
-            <div className="text-center">
-              <h3 className="text-sm font-heading font-semibold text-foreground mb-2">
+            <div className="text-center p-2 bg-card rounded-lg">
+              <h3 className="text-[10px] font-heading font-semibold text-foreground mb-1">
                 Timeless Design
               </h3>
-              <p className="text-xs font-body text-muted-foreground">
-                Our designs blend classic elegance with modern aesthetics, creating pieces that never go out of style.
+              <p className="text-[8px] font-body text-muted-foreground">
+                Classic elegance with modern aesthetics
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-8 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-            <div className="rounded-lg overflow-hidden shadow-sm order-2 lg:order-1">
+      <section className="py-4 bg-background">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+            <div className="rounded-lg overflow-hidden shadow-sm h-40 sm:h-48 order-2 lg:order-1">
               <img 
                 src={heroImage} 
-                alt="Swapnil Jewellers Collection"
-                className="w-full h-auto object-contain"
+                alt="Pure gold collection"
+                className="w-full h-full object-contain"
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h2 className="text-xl font-heading font-semibold text-foreground mb-3">
+              <h2 className="text-sm font-heading font-semibold text-foreground mb-2">
                 Our Commitment
               </h2>
-              <p className="text-xs font-body text-muted-foreground mb-2">
-                We are committed to providing an exceptional experience for every customer. From the moment you discover our collections to the day you receive your piece, we ensure that every step reflects our dedication to excellence.
+              <p className="text-[9px] font-body text-muted-foreground mb-1.5">
+                We provide an exceptional experience from discovery to delivery, with every step reflecting our dedication to excellence.
               </p>
-              <p className="text-xs font-body text-muted-foreground mb-2">
-                Our team is passionate about helping you find the perfect piece that resonates with your personal style and celebrates your special moments.
+              <p className="text-[9px] font-body text-muted-foreground mb-1.5">
+                Our team helps you find the perfect pure gold piece that celebrates your special moments.
               </p>
-              <p className="text-xs font-body text-muted-foreground">
-                Thank you for choosing Swapnil Jewellers. We look forward to being part of your story.
+              <p className="text-[9px] font-body text-gold font-medium">
+                Thank you for choosing Swapnil Jewellers.
               </p>
             </div>
           </div>
