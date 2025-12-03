@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Link } from "react-router-dom";
 import ringImage from "@/assets/category-ring.jpg";
 import braceletImage from "@/assets/category-bracelet.jpg";
@@ -47,6 +48,7 @@ const CategoriesPage = () => {
       </section>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

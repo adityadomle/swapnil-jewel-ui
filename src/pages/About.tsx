@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import highlightImage from "@/assets/highlight-model.jpg";
 import heroImage from "@/assets/hero-model.jpg";
 
@@ -110,6 +111,7 @@ const About = () => {
       </section>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
