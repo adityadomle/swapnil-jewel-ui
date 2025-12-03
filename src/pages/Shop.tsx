@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
@@ -192,6 +193,7 @@ const Shop = () => {
       </section>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

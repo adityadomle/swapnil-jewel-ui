@@ -8,6 +8,7 @@ import PromoBanners from "@/components/PromoBanners";
 import HighlightBanner from "@/components/HighlightBanner";
 import BraceletBanner from "@/components/BraceletBanner";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <HighlightBanner />
       <BraceletBanner />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
