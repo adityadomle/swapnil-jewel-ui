@@ -1,57 +1,29 @@
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { products } from "@/data/products";
 
 const Shop = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedPriceRange, setSelectedPriceRange] = useState<string>("all");
 
-  const products = [
-    { name: "Pure Gold Traditional Ring", category: "ring", weight: 2.5, rating: 5, image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&q=80" },
-    { name: "22K Gold Wedding Band", category: "ring", weight: 3.2, rating: 5, image: "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=400&q=80" },
-    { name: "Gold Signet Ring", category: "ring", weight: 4.8, rating: 5, image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=400&q=80" },
-    { name: "Classic Gold Band", category: "ring", weight: 2.8, rating: 5, image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&q=80" },
-    { name: "Gold Rope Chain", category: "chain", weight: 8.5, rating: 5, image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80" },
-    { name: "22K Cuban Link Chain", category: "chain", weight: 15.8, rating: 5, image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&q=80" },
-    { name: "Gold Figaro Chain", category: "chain", weight: 12.5, rating: 5, image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&q=80" },
-    { name: "Snake Chain Necklace", category: "chain", weight: 9.2, rating: 5, image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80" },
-    { name: "Pure Gold Hoop Earrings", category: "earring", weight: 4.1, rating: 5, image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80" },
-    { name: "Gold Jhumka Earrings", category: "earring", weight: 5.8, rating: 5, image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?w=400&q=80" },
-    { name: "Gold Stud Earrings", category: "earring", weight: 2.4, rating: 5, image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&q=80" },
-    { name: "Traditional Gold Earrings", category: "earring", weight: 6.2, rating: 5, image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?w=400&q=80" },
-    { name: "Gold Bangle Set", category: "bangle", weight: 12.0, rating: 5, image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=400&q=80" },
-    { name: "Traditional Bangles", category: "bangle", weight: 28.0, rating: 5, image: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=400&q=80" },
-    { name: "Gold Kada Bangle", category: "bangle", weight: 18.0, rating: 5, image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=400&q=80" },
-    { name: "Slim Gold Bangles", category: "bangle", weight: 8.5, rating: 5, image: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=400&q=80" },
-    { name: "Gold Cuff Bracelet", category: "bracelet", weight: 14.2, rating: 5, image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&q=80" },
-    { name: "Gold Link Bracelet", category: "bracelet", weight: 10.5, rating: 5, image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=400&q=80" },
-    { name: "Pure Gold Tennis Bracelet", category: "bracelet", weight: 16.8, rating: 5, image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&q=80" },
-    { name: "Traditional Gold Bracelet", category: "bracelet", weight: 11.2, rating: 5, image: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=400&q=80" },
-    { name: "Gold Temple Pendant", category: "pendant", weight: 5.5, rating: 5, image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&q=80" },
-    { name: "Pure Gold Locket", category: "pendant", weight: 4.2, rating: 5, image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&q=80" },
-    { name: "Gold Om Pendant", category: "pendant", weight: 3.8, rating: 5, image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&q=80" },
-    { name: "Traditional Gold Pendant", category: "pendant", weight: 6.5, rating: 5, image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&q=80" },
-    { name: "Gold Mangalsutra", category: "necklace", weight: 6.2, rating: 5, image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80" },
-    { name: "Traditional Gold Choker", category: "necklace", weight: 22.0, rating: 5, image: "https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=400&q=80" },
-    { name: "Gold Box Chain Necklace", category: "necklace", weight: 7.5, rating: 5, image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&q=80" },
-    { name: "Pure Gold Statement Necklace", category: "necklace", weight: 32.0, rating: 5, image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=400&q=80" },
-  ];
-
   const filteredProducts = products.filter(product => {
-    const categoryMatch = selectedCategory === "all" || product.category === selectedCategory;
+    const categoryMatch = selectedCategory === "all" || product.category.toLowerCase() === selectedCategory;
     
+    const weight = parseFloat(product.weight);
     let priceMatch = true;
     if (selectedPriceRange === "0-5") {
-      priceMatch = product.weight <= 5;
+      priceMatch = weight <= 5;
     } else if (selectedPriceRange === "5-10") {
-      priceMatch = product.weight > 5 && product.weight <= 10;
+      priceMatch = weight > 5 && weight <= 10;
     } else if (selectedPriceRange === "10-20") {
-      priceMatch = product.weight > 10 && product.weight <= 20;
+      priceMatch = weight > 10 && weight <= 20;
     } else if (selectedPriceRange === "20+") {
-      priceMatch = product.weight > 20;
+      priceMatch = weight > 20;
     }
     
     return categoryMatch && priceMatch;
@@ -88,13 +60,13 @@ const Shop = () => {
                   <div className="space-y-0.5">
                     {[
                       { value: "all", label: "All Products" },
-                      { value: "ring", label: "Rings" },
-                      { value: "chain", label: "Chains" },
-                      { value: "earring", label: "Earrings" },
-                      { value: "bangle", label: "Bangles" },
-                      { value: "bracelet", label: "Bracelets" },
-                      { value: "pendant", label: "Pendants" },
-                      { value: "necklace", label: "Necklaces" },
+                      { value: "rings", label: "Rings" },
+                      { value: "chains", label: "Chains" },
+                      { value: "earrings", label: "Earrings" },
+                      { value: "bangles", label: "Bangles" },
+                      { value: "bracelets", label: "Bracelets" },
+                      { value: "pendants", label: "Pendants" },
+                      { value: "necklaces", label: "Necklaces" },
                     ].map(cat => (
                       <button
                         key={cat.value}
@@ -159,14 +131,15 @@ const Shop = () => {
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
-                {filteredProducts.map((product, index) => (
-                  <ProductCard
-                    key={index}
-                    name={product.name}
-                    weight={`${product.weight} gm`}
-                    rating={product.rating}
-                    image={product.image}
-                  />
+                {filteredProducts.map((product) => (
+                  <Link key={product.id} to={`/product/${product.id}`}>
+                    <ProductCard
+                      name={product.name}
+                      weight={product.weight}
+                      rating={product.rating}
+                      image={product.image}
+                    />
+                  </Link>
                 ))}
               </div>
 

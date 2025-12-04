@@ -9,7 +9,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ name, weight, rating, image }: ProductCardProps) => {
   return (
-    <div className="bg-card rounded-lg overflow-hidden shadow-sm border border-border/50">
+    <div className="bg-card rounded-lg overflow-hidden shadow-sm border border-border/50 cursor-pointer hover:shadow-md transition-shadow">
       <div className="aspect-square bg-beige p-1.5">
         <img 
           src={image} 
