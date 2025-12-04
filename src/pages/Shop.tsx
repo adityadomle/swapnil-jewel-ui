@@ -162,7 +162,6 @@ const Shop = () => {
                 {filteredProducts.map((product, index) => (
                   <ProductCard
                     key={index}
-                    id={`shop-${product.category}-${index}`}
                     name={product.name}
                     weight={`${product.weight} gm`}
                     rating={product.rating}
