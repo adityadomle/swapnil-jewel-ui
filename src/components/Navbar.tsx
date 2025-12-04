@@ -1,9 +1,11 @@
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShoppingBag } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useCart } from "@/contexts/CartContext";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { totalItems, setIsCartOpen } = useCart();
 
   return (
     <nav className="bg-background border-b border-border/50 sticky top-0 z-50">
@@ -15,24 +17,48 @@ const Navbar = () => {
             </h1>
           </Link>
           
-          <div className="hidden md:flex space-x-4 lg:space-x-6">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
             <Link to="/" className="text-[10px] text-foreground font-body font-medium">Home</Link>
             <Link to="/shop" className="text-[10px] text-foreground font-body font-medium">Shop</Link>
             <Link to="/categories" className="text-[10px] text-foreground font-body font-medium">Categories</Link>
             <Link to="/about" className="text-[10px] text-foreground font-body font-medium">About</Link>
             <Link to="/contact" className="text-[10px] text-foreground font-body font-medium">Contact</Link>
+            <button
+              onClick={() => setIsCartOpen(true)}
+              className="relative p-1.5 text-foreground hover:text-gold"
+            >
+              <ShoppingBag className="w-4 h-4" />
+              {totalItems > 0 && (
+                <span className="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 bg-gold text-background text-[8px] font-bold rounded-full flex items-center justify-center">
+                  {totalItems}
+                </span>
+              )}
+            </button>
           </div>
 
-          <button 
-            className="md:hidden p-1.5"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? (
-              <X className="h-4 w-4 text-foreground" />
-            ) : (
-              <Menu className="h-4 w-4 text-foreground" />
-            )}
-          </button>
+          <div className="flex items-center gap-2 md:hidden">
+            <button
+              onClick={() => setIsCartOpen(true)}
+              className="relative p-1.5 text-foreground"
+            >
+              <ShoppingBag className="w-4 h-4" />
+              {totalItems > 0 && (
+                <span className="absolute -top-0.5 -right-0.5 w-3.5 h-3.5 bg-gold text-background text-[8px] font-bold rounded-full flex items-center justify-center">
+                  {totalItems}
+                </span>
+              )}
+            </button>
+            <button 
+              className="p-1.5"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? (
+                <X className="h-4 w-4 text-foreground" />
+              ) : (
+                <Menu className="h-4 w-4 text-foreground" />
+              )}
+            </button>
+          </div>
         </div>
 
         {isMenuOpen && (

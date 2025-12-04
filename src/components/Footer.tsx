@@ -55,12 +55,12 @@ const Footer = () => {
               <li className="flex items-start gap-1">
                 <MapPin className="w-3 h-3 text-gold mt-0.5 flex-shrink-0" />
                 <span className="text-[9px] font-body text-muted-foreground">
-                  Ring Rd, Malharganj, Indore
+                  Virsi, Taluka - Sakoli, Dist - Bhandara, India
                 </span>
               </li>
               <li className="flex items-center gap-1">
                 <Phone className="w-3 h-3 text-gold flex-shrink-0" />
-                <span className="text-[9px] font-body text-muted-foreground">+91 7314051261</span>
+                <span className="text-[9px] font-body text-muted-foreground">+91 7796869904</span>
               </li>
               <li className="flex items-center gap-1">
                 <Mail className="w-3 h-3 text-gold flex-shrink-0" />

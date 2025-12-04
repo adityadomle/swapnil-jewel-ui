@@ -1,13 +1,26 @@
-import { Star } from "lucide-react";
+import { Star, ShoppingCart } from "lucide-react";
+import { useCart } from "@/contexts/CartContext";
 
 interface ProductCardProps {
+  id?: string;
   name: string;
   weight: string;
   rating: number;
   image: string;
 }
 
-const ProductCard = ({ name, weight, rating, image }: ProductCardProps) => {
+const ProductCard = ({ id, name, weight, rating, image }: ProductCardProps) => {
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: id || `${name}-${weight}`,
+      name,
+      weight,
+      image,
+    });
+  };
+
   return (
     <div className="bg-card rounded-lg overflow-hidden shadow-sm border border-border/50">
       <div className="aspect-square bg-beige p-1.5">
@@ -30,9 +43,16 @@ const ProductCard = ({ name, weight, rating, image }: ProductCardProps) => {
             />
           ))}
         </div>
-        <p className="text-[9px] font-body font-semibold text-gold">
+        <p className="text-[9px] font-body font-semibold text-gold mb-1">
           {weight}
         </p>
+        <button
+          onClick={handleAddToCart}
+          className="w-full flex items-center justify-center gap-1 bg-gold/10 hover:bg-gold/20 text-foreground py-1 rounded text-[8px] font-body transition-colors"
+        >
+          <ShoppingCart className="w-2.5 h-2.5" />
+          Add to Cart
+        </button>
       </div>
     </div>
   );

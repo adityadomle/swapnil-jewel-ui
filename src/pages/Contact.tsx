@@ -131,7 +131,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-body font-medium text-foreground text-[9px]">Address</h3>
                       <p className="text-[8px] text-muted-foreground font-body">
-                        Ring Rd, Malharganj, Indore
+                        Virsi, Taluka - Sakoli, Dist - Bhandara, India
                       </p>
                     </div>
                   </div>
@@ -139,7 +139,7 @@ const Contact = () => {
                     <Phone className="w-3 h-3 text-gold mt-0.5 flex-shrink-0" />
                     <div>
                       <h3 className="font-body font-medium text-foreground text-[9px]">Phone</h3>
-                      <p className="text-[8px] text-muted-foreground font-body">+91 7314051261</p>
+                      <p className="text-[8px] text-muted-foreground font-body">+91 7796869904</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
@@ -178,7 +178,7 @@ const Contact = () => {
             <h2 className="text-xs font-heading font-semibold text-foreground mb-2 px-1">Visit Our Store</h2>
             <div className="w-full h-[200px] rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.1234567890!2d75.8765432!3d22.7195678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQzJzEwLjQiTiA3NcKwNTInMzUuNiJF!5e0!3m2!1sen!2sin!4v1234567890123"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14892.123456789!2d79.9876!3d21.2345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sVirsi%2C%20Sakoli%2C%20Bhandara!5e0!3m2!1sen!2sin!4v1234567890123"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
