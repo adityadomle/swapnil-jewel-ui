@@ -9,20 +9,20 @@ const Navbar = () => {
 
   return (
     <nav className="bg-background border-b border-border/50 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
-        <div className="flex justify-between items-center h-12">
+      <div className="max-w-7xl lg:max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-12 xl:px-16">
+        <div className="flex justify-between items-center h-12 lg:h-16">
           <Link to="/" className="flex-shrink-0">
-            <h1 className="text-sm sm:text-base font-heading font-bold text-foreground">
+            <h1 className="text-sm sm:text-base lg:text-xl font-heading font-bold text-foreground">
               Swapnil <span className="text-gold">Jewellers</span>
             </h1>
           </Link>
           
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
-            <Link to="/" className="text-[10px] text-foreground font-body font-medium">Home</Link>
-            <Link to="/shop" className="text-[10px] text-foreground font-body font-medium">Shop</Link>
-            <Link to="/categories" className="text-[10px] text-foreground font-body font-medium">Categories</Link>
-            <Link to="/about" className="text-[10px] text-foreground font-body font-medium">About</Link>
-            <Link to="/contact" className="text-[10px] text-foreground font-body font-medium">Contact</Link>
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-10">
+            <Link to="/" className="text-[10px] lg:text-sm text-foreground font-body font-medium">Home</Link>
+            <Link to="/shop" className="text-[10px] lg:text-sm text-foreground font-body font-medium">Shop</Link>
+            <Link to="/categories" className="text-[10px] lg:text-sm text-foreground font-body font-medium">Categories</Link>
+            <Link to="/about" className="text-[10px] lg:text-sm text-foreground font-body font-medium">About</Link>
+            <Link to="/contact" className="text-[10px] lg:text-sm text-foreground font-body font-medium">Contact</Link>
             <button
               onClick={() => setIsCartOpen(true)}
               className="relative p-1.5 text-foreground hover:text-gold"

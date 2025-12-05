@@ -33,31 +33,31 @@ const Shop = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      <section className="py-4 bg-beige">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6 text-center">
-          <h1 className="text-lg sm:text-xl font-heading font-bold text-foreground mb-1">
+      <section className="py-4 lg:py-12 bg-beige">
+        <div className="max-w-7xl lg:max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-12 xl:px-16 text-center">
+          <h1 className="text-lg sm:text-xl lg:text-4xl font-heading font-bold text-foreground mb-1 lg:mb-3">
             Pure Gold Collection
           </h1>
-          <p className="text-[10px] font-body text-muted-foreground">
+          <p className="text-[10px] lg:text-base font-body text-muted-foreground">
             Handcrafted 22K Gold Jewellery
           </p>
         </div>
       </section>
 
-      <section className="py-4 bg-background">
-        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
+      <section className="py-4 lg:py-12 bg-background">
+        <div className="max-w-7xl lg:max-w-[1600px] mx-auto px-3 sm:px-4 lg:px-12 xl:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 lg:gap-8">
             <div className="lg:col-span-1">
-              <div className="bg-beige rounded-lg p-2 sticky top-16">
-                <h2 className="text-xs font-heading font-semibold text-foreground mb-2">
+              <div className="bg-beige rounded-lg lg:rounded-xl p-2 lg:p-6 sticky top-16 lg:top-20">
+                <h2 className="text-xs lg:text-xl font-heading font-semibold text-foreground mb-2 lg:mb-4">
                   Filters
                 </h2>
                 
-                <div className="mb-3">
-                  <h3 className="text-[9px] font-body font-semibold text-foreground uppercase tracking-wider mb-1">
+                <div className="mb-3 lg:mb-6">
+                  <h3 className="text-[9px] lg:text-sm font-body font-semibold text-foreground uppercase tracking-wider mb-1 lg:mb-3">
                     Category
                   </h3>
-                  <div className="space-y-0.5">
+                  <div className="space-y-0.5 lg:space-y-1">
                     {[
                       { value: "all", label: "All Products" },
                       { value: "rings", label: "Rings" },
@@ -71,7 +71,7 @@ const Shop = () => {
                       <button
                         key={cat.value}
                         onClick={() => setSelectedCategory(cat.value)}
-                        className={`block w-full text-left px-2 py-0.5 rounded font-body text-[9px] ${
+                        className={`block w-full text-left px-2 lg:px-4 py-0.5 lg:py-2 rounded lg:rounded-lg font-body text-[9px] lg:text-sm ${
                           selectedCategory === cat.value
                             ? "bg-gold/20 text-foreground font-medium"
                             : "text-muted-foreground"
@@ -84,10 +84,10 @@ const Shop = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-[9px] font-body font-semibold text-foreground uppercase tracking-wider mb-1">
+                  <h3 className="text-[9px] lg:text-sm font-body font-semibold text-foreground uppercase tracking-wider mb-1 lg:mb-3">
                     Weight Range
                   </h3>
-                  <div className="space-y-0.5">
+                  <div className="space-y-0.5 lg:space-y-1">
                     {[
                       { value: "all", label: "All Weights" },
                       { value: "0-5", label: "Under 5 gm" },
@@ -98,7 +98,7 @@ const Shop = () => {
                       <button
                         key={range.value}
                         onClick={() => setSelectedPriceRange(range.value)}
-                        className={`block w-full text-left px-2 py-0.5 rounded font-body text-[9px] ${
+                        className={`block w-full text-left px-2 lg:px-4 py-0.5 lg:py-2 rounded lg:rounded-lg font-body text-[9px] lg:text-sm ${
                           selectedPriceRange === range.value
                             ? "bg-gold/20 text-foreground font-medium"
                             : "text-muted-foreground"
@@ -113,7 +113,7 @@ const Shop = () => {
                 {(selectedCategory !== "all" || selectedPriceRange !== "all") && (
                   <Button
                     variant="outline"
-                    className="w-full mt-2 bg-background text-foreground border-border font-body text-[9px] h-6"
+                    className="w-full mt-2 lg:mt-4 bg-background text-foreground border-border font-body text-[9px] lg:text-sm h-6 lg:h-10"
                     onClick={() => {
                       setSelectedCategory("all");
                       setSelectedPriceRange("all");
@@ -126,11 +126,11 @@ const Shop = () => {
             </div>
 
             <div className="lg:col-span-3">
-              <p className="text-[9px] font-body text-muted-foreground mb-2">
+              <p className="text-[9px] lg:text-sm font-body text-muted-foreground mb-2 lg:mb-4">
                 Showing {filteredProducts.length} products
               </p>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-6">
                 {filteredProducts.map((product) => (
                   <Link key={product.id} to={`/product/${product.id}`}>
                     <ProductCard
@@ -144,13 +144,13 @@ const Shop = () => {
               </div>
 
               {filteredProducts.length === 0 && (
-                <div className="text-center py-6">
-                  <p className="text-[10px] font-body text-muted-foreground mb-2">
+                <div className="text-center py-6 lg:py-16">
+                  <p className="text-[10px] lg:text-base font-body text-muted-foreground mb-2 lg:mb-4">
                     No products found
                   </p>
                   <Button
                     variant="outline"
-                    className="bg-background text-foreground border-border font-body text-[9px] h-6"
+                    className="bg-background text-foreground border-border font-body text-[9px] lg:text-sm h-6 lg:h-10"
                     onClick={() => {
                       setSelectedCategory("all");
                       setSelectedPriceRange("all");
